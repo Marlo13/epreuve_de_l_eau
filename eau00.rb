@@ -76,7 +76,7 @@ def no_Egal()
         n = 0 
         arr.each(|a| )
 
-
+ 
 
 
 
