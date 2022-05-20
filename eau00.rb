@@ -69,15 +69,27 @@ def see_One_More(arr)
 end
 #growing(arr)   
 
-# suprimer tout les nombre qui ont au moin 1 chiffre en commun
+# suprimer tout les nombre qui ont au moins 1 chiffre en commun
 
-def no_Egal()
-    while n < arr.length
-        n = 0 
-        arr.each(|a| )
+def no_Egal(a)
+    n = 0 
+    
+    while n < a.length - 1
+        
+        a.each{|b| b.chars;
+            if b[0] = b[1] || b[1] = b[2] || b[0] = b[2]
+                print "#{b[0]}."
+                print "#{b[1]}."
+                print "#{b[2]}."
+            else
+                puts "Pas d egaliter"
+            end   
+        }
 
- 
+        n = n+1
+    end
+   print a
+end
 
-
-
-growing(arr)
+arr2 = [12, 13, 33, 22]
+no_Egal(arr2)
