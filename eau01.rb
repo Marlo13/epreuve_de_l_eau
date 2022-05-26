@@ -7,15 +7,15 @@ b = 0
     while b < 99 && a <= 99 # ajoutez 1 a 00 de a et count +1 pour a chaque fois que a =99 et le remettre a 0
 
     
-        if a < b
+        if a < b  # mets a par rapport a b dans l ordre croissant
             if a == 0 
                 a = a + 1
             end
            a = a + b
         end
-        if a == 99
+        if a == 99 # increment b each a = 99 & puts avec 0 devant quand besoin
             
-            if b < 10
+            if b < 10 
                 puts "0#{b} #{a}"
             else
                 puts "#{b} #{a}"
