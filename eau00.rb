@@ -50,8 +50,8 @@ end
 
 
 
-def see_One_More(arr)
-    # supprimes les variable a l'index indiquer
+def see_One_More(arr)  # supprimes les variable a l'index indiquer
+    
     n = 0
     
     while n < arr.length 
@@ -65,31 +65,34 @@ def see_One_More(arr)
     n = n+1
     end
     a1 = arr.sort
-    print a1
-end
-#growing(arr)   
+    no_Egal(a1)
+end  
 
 # suprimer tout les nombre qui ont au moins 1 chiffre en commun
 
 def no_Egal(a)
-    n = 0 
-    
-    while n < a.length - 1
+    n = 0
+    a1=[]
+    while n < a.length
         
-        a.each{|b| b.chars;
-            if b[0] = b[1] || b[1] = b[2] || b[0] = b[2]
-                print "#{b[0]}."
-                print "#{b[1]}."
-                print "#{b[2]}."
-            else
-                puts "Pas d egaliter"
-            end   
-        }
+        a[n].split('')
+        
+        if a[n][0] == a[n][1] && a[n][1] == a[n][2] && a[n][0] == a[n][2]
+
+        elsif a[n][0] == a[n][1]
+
+        elsif a[n][1] == a[n][2]
+
+       elsif a[n][0] == a[n][2]
+
+       else
+            a1 << a[n]
+        end
 
         n = n+1
+        
     end
-   print a
+    print a1
 end
 
-arr2 = [12, 13, 33, 22]
-no_Egal(arr2)
+growing(arr)
