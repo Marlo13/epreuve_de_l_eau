@@ -23,6 +23,15 @@ end
 =end
 
 
+def error(arr)
+    if  arr[0] == nil 
+        puts "Error"
+    else
+        reversee(arr)
+    end
+end
+
+
 def reversee(arr)
     a = 0
     z = arr.length - 1
@@ -39,4 +48,4 @@ puts arr
 
 end
 
-reversee(ARGV)
+error(ARGV)
