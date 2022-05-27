@@ -34,7 +34,7 @@ def growing(arr)
     a1 = []
     while n < arr.length    
         
-       a1 << arr[n].chars.sort.join #chars decompose sort trie et join remet
+       a1 << arr[n].chars.sort.join #chars decompose sort trie et join recolle la decomposition de chars
         
         n = n+1
         
