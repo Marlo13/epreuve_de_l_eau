@@ -23,7 +23,7 @@ def number_first(arr)
         else
         end
 
-        if a > n 
+        if arr.last.to_i > n 
             b = b + 1
         else
         end
