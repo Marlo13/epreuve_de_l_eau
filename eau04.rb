@@ -1,5 +1,17 @@
 #nombre premier divisible que par lui meme et 1
 
+def plus_que_un(arr)
+    if arr[0].to_i < 0
+        puts "-1"
+    elsif arr[0] == nil
+        puts "-1" 
+    elsif !arr.all?(/\d/) #gere les string
+        puts "-1"
+    else
+        number_first(arr)
+    end
+end
+
 
 def number_first(arr)
     n = ARGV[0].to_i
@@ -33,4 +45,4 @@ def number_first(arr)
     puts arr.last
 end
 
-number_first(ARGV[0])
+plus_que_un(ARGV)
