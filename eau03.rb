@@ -4,11 +4,7 @@
 
 #faut que quand ARGV = a arr.length sa puts le dernier
 def plus_que_un(arr)
-    if arr[0].to_i < 0
-        puts "-1"
-    elsif arr[0] == nil
-        puts "-1" 
-    elsif !arr.all?(/\d/)#gere les string
+    if arr[0].to_i < 0 || arr[0] == nil || !arr.all?(/\d/)
         puts "-1"
     else
         fibonacci_suit(arr)
