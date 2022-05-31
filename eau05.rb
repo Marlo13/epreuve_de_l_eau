@@ -33,12 +33,8 @@ def strin_contains(mot1, mot2)
         else
             i+=1
         end
-        if i == mot1.size
-            if j == mot2.size
-                puts true
-                exit
-            end
-        end
+        (puts true ; exit) if i == mot1.size && j == mot2.size
+        
         (puts true ; exit) if j == mot2.size
 
         (j = 0) if j > 0 && mot2[j] != mot1[i]
