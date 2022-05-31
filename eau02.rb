@@ -22,7 +22,7 @@ def enver(arr)
 end
 =end
 
-
+=begin
 def error(arr)
     if  arr[0] == nil 
         puts "Error"
@@ -30,9 +30,9 @@ def error(arr)
         reversee(arr)
     end
 end
+=end
 
-
-def reversee(arr)
+def reversee(arr) # méthod
     a = 0
     z = arr.length - 1
     
@@ -43,9 +43,14 @@ def reversee(arr)
     a = a + 1
     z = z - 1
     end
-
-puts arr
-
+    return arr
 end
 
-error(ARGV)
+
+puts "Error" if ARGV[0] == nil # gestion d erreur
+
+number = ARGV # parsing
+
+a_l_enver = reversee(number) # resolution
+
+puts a_l_enver # afficher le resultat
