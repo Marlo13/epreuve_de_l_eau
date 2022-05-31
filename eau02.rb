@@ -22,16 +22,6 @@ def enver(arr)
 end
 =end
 
-=begin
-def error(arr)
-    if  arr[0] == nil 
-        puts "Error"
-    else
-        reversee(arr)
-    end
-end
-=end
-
 def reversee(arr) # méthod
     a = 0
     z = arr.length - 1
