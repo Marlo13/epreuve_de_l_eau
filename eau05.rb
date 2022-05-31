@@ -28,10 +28,10 @@ def strin_contains(mot1, mot2)
     
     while i < mot1.size
         if mot1[i] == mot2[j]
-            i+=1
-            j+=1
+            i += 1 
+            j += 1
         else
-            i+=1
+            i += 1
         end
         (puts true ; exit) if i == mot1.size && j == mot2.size
         
