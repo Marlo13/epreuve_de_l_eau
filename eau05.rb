@@ -27,8 +27,6 @@ def strin_contains(mot1, mot2)
     j = 0
     
     while i < mot1.size
-        print mot1[i], mot2[j], ".."
-        
         if mot1[i] == mot2[j]
             i+=1
             j+=1
@@ -42,7 +40,7 @@ def strin_contains(mot1, mot2)
             end
         end
         (puts true ; exit) if j == mot2.size
-        
+
         (j = 0) if j > 0 && mot2[j] != mot1[i]
     end
     (puts false ; exit) if j == 0
