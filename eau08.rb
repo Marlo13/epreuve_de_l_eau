@@ -19,12 +19,8 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 def numeric?(arr)
     a = 0
     while a < arr.size
-        p arr[a]
-        if arr[a].match(/\w/)
-            puts "false"
-            exit
-        else
-        end
+        (puts "false" ; exit) if arr[a].match(/\w/)
+        
         a += 1 
     end
     return true
