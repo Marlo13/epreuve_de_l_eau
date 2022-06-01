@@ -19,7 +19,7 @@ b = 0
                 puts "0#{b} #{a}"
             else
                 puts "#{b} #{a}"
-            end
+            end 
             a = -1
             b = b + 1
         
