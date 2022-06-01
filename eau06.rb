@@ -14,22 +14,41 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 =end
 #.upcase toutes les lettres paires
 
-def one_letteroftwo(arr)
+
+def one_letteroftwo(str)
+    a = 0
     n = 0
-    
-    while n < arr.length
+    lettre = ''
+    while a < (str.size)
         
-        arr[n].chars{        
-        if n.even?
-            puts "lol"
-            arr[n].to_s.upcase
-        else
-            puts "mdr"
-            arr[n].to_s.downcase
-        end}
-    n = n + 1
+        (n += 1) if str[a] == " "
+
+
+        lettre +=   if n % 2 == 0
+                        if a % 2 == 0
+                            str[a].upcase
+                        else
+                            str[a].downcase
+                        end
+                    else
+                        if a % 2 == 0
+                            str[a].downcase
+                        else
+                            str[a].upcase
+                        end
+                    end
+        
+        a += 1
     end
-    
-    print arr
+   return lettre
 end
-one_letteroftwo(ARGV)
+
+#gestion d erreur
+(puts "error" ; exit) if ARGV[0] == nil
+(puts "error" ; exit) if /\d/.match(ARGV[0])
+#parsing
+chaine = ARGV[0]
+#resolution
+result = one_letteroftwo(chaine)
+#affichage
+puts result
