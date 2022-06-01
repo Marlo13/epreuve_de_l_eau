@@ -15,7 +15,7 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 #.upcase toutes les lettres paires
 
 
-def one_letteroftwo(str)
+def one_letteroftwo(str) #method
     a = 0
     n = 0
     lettre = ''
