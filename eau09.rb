@@ -24,7 +24,7 @@ def affiche_la_suite(arr)
         a1 << a
     end
 
-    return  a1
+    return  a1.join(' ')
 end
 
 #gestion d erreur
@@ -34,4 +34,4 @@ nombres = ARGV
 #resolution
 lit = affiche_la_suite(nombres)
 #affichage
-p lit
+puts lit

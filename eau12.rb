@@ -24,7 +24,7 @@ Wikipedia vous présentera une belle description de cet algorithme de tri.
 
 def my_bubble_sort(list)
     swapped = true
-    while swapped do
+    while swapped
       swapped = false
       0.upto(list.size-2) do |i|
         if list[i] > list[i+1]
@@ -33,7 +33,8 @@ def my_bubble_sort(list)
         end
       end
     end
-    return list
+    a1 = list
+    return a1
 end
 
 
@@ -50,4 +51,4 @@ number = ARGV
 #resolution
 result = my_bubble_sort(number)
 #affichage
-print number
+puts number.join(' ')
