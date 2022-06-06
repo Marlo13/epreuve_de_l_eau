@@ -19,7 +19,7 @@ def first_upcase(arr)
     a = 0
     b = 0
     lettre = arr.dup
-    while a < (lettre.size)
+    while a < (lettre.size)#for adapter
         (lettre[a] = lettre[a].upcase) if a == 0
         (lettre[a] = lettre[a].upcase ; n = 0 ; b = 0) if n > b
         (n += 1) if lettre[a] == ' '

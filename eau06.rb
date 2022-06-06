@@ -19,7 +19,7 @@ def one_letteroftwo(str) #method
     a = 0
     n = 0
     lettre = ''
-    while a < (str.size)
+    while a < (str.size) #for plus adapter
         
         (n += 1) if str[a] == " "
 

@@ -35,7 +35,12 @@ def reversee(arr) # méthod
     end
     return arr
 end
-
+=begin
+n = array.size
+for i in n..0
+    puts i    
+end
+=end
 
 puts "Error" if ARGV[0] == nil # gestion d erreur
 

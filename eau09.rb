@@ -19,7 +19,7 @@ Afficher error et quitter le programme en cas de problèmes d’arguments.
 def affiche_la_suite(arr)
     a1 = []
     a = arr[0].to_i-1
-    while a.to_i < arr[1].to_i
+    while a.to_i < arr[1].to_i# for adapter
         a += 1 
         a1 << a
     end
