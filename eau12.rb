@@ -51,4 +51,4 @@ number = ARGV
 #resolution
 result = my_bubble_sort(number)
 #affichage
-puts result.join(' ')
+puts result.join(" ")

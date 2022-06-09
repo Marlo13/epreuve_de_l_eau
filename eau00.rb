@@ -92,7 +92,7 @@ def no_Egal(a)
         n = n+1
         
     end
-    print a1
+    puts a1.join(' ')
 end
 
 growing(arr)
